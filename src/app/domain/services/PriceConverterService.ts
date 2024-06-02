@@ -1,4 +1,4 @@
-import { Price } from '../entities/price/Price';
+import { Price } from '../entities/price/price';
 import { PriceUnit } from '../entities/price/price-unit';
 import { Injectable } from '@angular/core';
 

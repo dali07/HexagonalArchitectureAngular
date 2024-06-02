@@ -1,4 +1,4 @@
-import { Price } from "../price/Price";
+import { Price } from "../price/price";
 
 export class StorageContract {
     public name: string;

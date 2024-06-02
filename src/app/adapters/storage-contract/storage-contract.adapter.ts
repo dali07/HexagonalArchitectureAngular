@@ -2,7 +2,7 @@ import { Observable, of } from 'rxjs';
 import { StorageContract } from '../../domain/entities/storage-contract/storage-contract';
 import { PriceUnit } from '../../domain/entities/price/price-unit';
 import { Injectable } from '@angular/core';
-import { Price } from '../../domain/entities/price/Price';
+import { Price } from '../../domain/entities/price/price';
 
 @Injectable({
   providedIn: 'root'
