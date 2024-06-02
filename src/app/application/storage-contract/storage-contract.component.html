@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <tr>
+            <th>Contracte Name</th>
+            <th>Buy Price</th>
+            <th>Sell Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(storageContract of storageContractList; track storageContract.name){
+        <tr>
+            <td>{{storageContract.name}}</td>
+            <td>{{storageContract.buyPrice?.value}} {{storageContract.buyPrice?.unit | priceUnitToText}}</td>
+            <td>{{storageContract.sellPrice?.value}} {{storageContract.sellPrice?.unit | priceUnitToText}}</td>
+        </tr>
+        }
+    </tbody>
+</table>
