@@ -28,5 +28,13 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
+  },
+  "ts-node": {
+    "experimentalSpecifierResolution": "node",
+    "compilerOptions": {
+      "allowSyntheticDefaultImports": true,
+      "resolveJsonModule": true,
+      "module": "ES2022"
+    }
   }
 }

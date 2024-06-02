@@ -1,12 +1,15 @@
 {
   "name": "hexagonal-architecture-angular",
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test-e2e": "ng test",
+    "test-bdd": "cross-env NODE_OPTIONS=\"--loader ts-node/esm\" TS_NODE_DEBUG=%npm_config_debug% DEBUG=cucumber cucumber-js -p default",
+    "test-all": "npm run test-e2e && npm run test-bdd --debug=false"
   },
   "private": true,
   "dependencies": {
@@ -18,7 +21,14 @@
     "@angular/platform-browser": "^18.0.0",
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
+    "@cucumber/cucumber": "^10.8.0",
+    "@types/chai": "^4.3.16",
+    "@types/sinon": "^17.0.3",
+    "chai": "^5.1.1",
+    "cross-env": "^7.0.3",
     "rxjs": "~7.8.0",
+    "sinon": "^18.0.0",
+    "ts-node": "^10.9.2",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
   },
